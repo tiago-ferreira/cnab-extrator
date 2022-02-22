@@ -1,7 +1,4 @@
-from registro_a import RegistroA
-from registro_d import RegistroD
-from registro_e import RegistroE
-from registro_z import RegistroZ
+from domain.registro_z import RegistroZ
 
 
 if(__name__ == "__main__"):
