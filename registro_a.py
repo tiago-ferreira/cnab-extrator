@@ -102,9 +102,18 @@ class RegistroA():
         self.__reservado_para_futuro = reservado_para_futuro
 
     def __str__(self):
-        return f'{self.__codigo_registro} - {self.__codigo_remessa} - ' \
-               f'{self.__codigo_convenio} - {self.__nome_destinataria} - ' \
-               f'{self.__codigo_depositaria} - {self.__nome_depositaria} - ' \
-               f'{self.__data_geracao} - {self.__numero_sequencial_arquivo} - ' \
-               f'{self.__versao_layout} - {self.__identificao_servico} - ' \
-               f'{self.__reservado_para_futuro}'
+        return self.__codigo_registro+self.__codigo_remessa+  \
+               self.__codigo_convenio+self.__nome_destinataria+ \
+               self.__codigo_depositaria+self.__nome_depositaria+ \
+               self.__data_geracao+self.__numero_sequencial_arquivo+ \
+               self.__versao_layout+self.__identificao_servico+ \
+               self.__reservado_para_futuro
+
+    def __repr__(self):
+        return f'codigo_registro= {self.__codigo_registro}, codigo_remessa= {self.__codigo_remessa}, ' \
+               f'codigo_convenio= {self.__codigo_convenio}, nome_destinataria= {self.__nome_destinataria}, ' \
+               f'codigo_depositaria= {self.__codigo_depositaria}, nome_depositaria= {self.__nome_depositaria}, ' \
+               f'data_geracao= {self.__data_geracao}, numero_sequencial_arquivo= {self.__numero_sequencial_arquivo}, ' \
+               f'versao_layout= {self.__versao_layout}, identificao_servico, {self.__identificao_servico}, ' \
+               f'reservado_para_futuro= {self.__reservado_para_futuro}'
+
