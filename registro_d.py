@@ -111,7 +111,7 @@ class RegistroD():
 
     def __repr__(self):
         return f'codigo_registro= {self.__codigo_registro}, identificacao_cliente_destinataria_atual= {self.__identificacao_cliente_destinataria_atual}, ' \
-               f'agencia= {self.__agencia}, dentificacao_cliente_depositaria= {self.__identificacao_cliente_depositaria}, ' \
+               f'agencia= {self.__agencia}, identificacao_cliente_depositaria= {self.__identificacao_cliente_depositaria}, ' \
                f'identificacao_cliente_destinataria_nova= {self.__identificacao_cliente_destinataria_nova}, ocorrencia= {self.__ocorrencia}, ' \
                f'nova_data_vencimento= {self.__nova_data_vencimento}, opcao_cheque_especial= {self.__opcao_cheque_especial}, ' \
                f'opcao_debito_parcial= {self.__opcao_debito_parcial}, reservado_para_futuro, {self.__reservado_para_futuro}, ' \
